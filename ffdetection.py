@@ -7,12 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1x-JsxOU4sBYJo80OvZ7deX_Z_58HsVqS
 """
 
-import kagglehub
-
-# Download latest version
-path = kagglehub.dataset_download("elmadafri/the-wildfire-dataset")
-
-print("Path to dataset files:", path)
+! pip install kaggle
+datasets download -d elmadafri/the-wildfire-dataset
 
 import os
 import numpy as np
